@@ -1,0 +1,164 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: url(wp9686948-cyber-world-wallpapers\ \(1\).jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40vh auto;
+    grid-template-areas: "head"
+    "list";
+    gap: 10px;
+    width: 100%;
+   
+}
+
+.head{
+    grid-area: head;
+    text-align: center;
+    color: white;
+}
+
+.add{
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.add .form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 50%;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+label{
+    text-wrap: nowrap;
+}
+.form div{
+    height: 50%;
+    margin: 20px;
+}
+
+.form input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60%;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: none;
+}
+
+.form button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: skyblue;
+}
+
+#error{
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 50%;
+    background-color: lightblue;
+}
+
+.list table, tr{
+   border-collapse: collapse;
+    border: 2px solid black;
+}
+td {
+    gap: 10px;
+    text-wrap: nowrap;
+    width: 100px;
+    text-align: right;
+}
+
+
+
+td button{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .form {
+        width: 80%;
+    }
+
+    .head h1 {
+        font-size: 2rem;
+    }
+
+    table {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+
+    .head h1 {
+        font-size: 1.8rem;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .form label, .form input, .form button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .head h1 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .form input, .form button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    td button {
+        padding: 8px;
+    }
+}

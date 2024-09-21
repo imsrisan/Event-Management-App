@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    width:100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    background: url(world.png.742x400_q85_crop.png) no-repeat;
+    background-size: cover;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    width: auto;
+    height: 65%;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container div{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.container div *{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label, p{
+    text-align: center;
+    /* text-wrap: nowrap; */
+}
+
+button{
+    font-size: 18px;
+}
+h1{
+    color: black;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.container textarea,input, button{
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+#criteria{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+#error{
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:850px){
+    body{
+        background: url(world.png.742x400_q85_crop.png) repeat;
+        background-size: contain;
+    }
+}

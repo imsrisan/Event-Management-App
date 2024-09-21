@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my-event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <head>
+            <div id="username"><p id="name">User name</p><h1 id="my-event">My Events</h1><div class="head"><button id="logout">Logout</button><button id="addevent">Add Event</button></div></div>
+        </head>
+        <main>
+            <div class="quickbar">
+                <div>
+                    <input id="search" type="text" placeholder="Search by event name">
+                </div>
+                <div>
+                    <select name="filter-by-date" id="date">
+                        <option value="" disabled selected hidden>Filter by Date</option>
+                        <option value="all">All</option>
+                        <option value="today">today</option>
+                        <option value="week">thisweek</option>
+                        <option value="month">nextmonth</option>
+                    </select>
+                </div>
+                <div><select id="category">
+                    <option value="" disabled selected hidden>Filter by Category</option>
+                    <option value="all">All</option>
+
+                </select></div>
+                <div><select name="status" id="status">
+                    <option value="" disabled selected hidden>Filter by Status</option>
+                    <option value="all">All</option>
+                    <option value="Finalized">Finalized</option>
+                    <option value="Planning">Planning</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+                </div>
+            </div>
+            <div class="event-gallery">
+                <h2>Upcoming Event List</h2>
+                <div class="gallery">
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                &copy; Event-Management: 2024
+            </div>
+        </footer>
+    </div>
+    <script src="myevents.bundle.js"></script>
+</body>
+</html>

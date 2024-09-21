@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(world.png.742x400_q85_crop.png) no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    width: 30%;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select{
+    width: 100%;
+    margin: 10px 0px;
+    height: 6vh;
+    padding: 10px;
+}
+
+select{
+    padding: 0px 10px;
+}
+
+#error{
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+}
+
+button{
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#back{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+}
+
+@media screen and (max-width:800px){
+    .container{
+        width: 60%;
+    }
+}

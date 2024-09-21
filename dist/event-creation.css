@@ -1,0 +1,109 @@
+body{
+    background: lightblue;
+    margin: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    background: url(world.png.742x400_q85_crop.png) no-repeat;
+    background-size: cover;
+}
+
+#error{
+    color: red;
+    background-color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.topbar div{
+    display: inline;
+}
+
+.wrapper{
+    width: 100%;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .event-form{
+    border: 2px solid black;
+    padding: 15px; 
+    border-radius: 5px;  
+    backdrop-filter: blur(20px);
+    margin: 20px 20px;
+
+}
+
+h1{
+    margin: 0px;
+    text-align: center;
+}
+
+.wrapper .input-bar input, textarea, select, button{
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid white;
+}
+.event-form input{
+    padding: 10px;
+}
+textarea{
+    height: 70px;
+}
+
+.wrapper .event-form label{
+    color : white;
+}
+
+#save-event{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* margin-bottom: 0px; */
+}
+
+#username{
+    /* display:none; */
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+#back button{
+    width: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+@media screen and (max-width: 480px){
+
+    body{
+        background: url(world.png.742x400_q85_crop.png) repeat; 
+        background-size: contain;
+    }
+
+    
+}
+
+@media screen and (max-width: 320px) {
+    .event-form{
+        width: 200px;
+    }
+    
+}

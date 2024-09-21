@@ -1,0 +1,134 @@
+body {
+    background: url(world.png.742x400_q85_crop.png) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#add-guest{
+    float: right;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list {
+    border-radius: 10px;
+    width: 55%;
+    backdrop-filter: blur(50px);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    color: white;
+    box-sizing: border-box;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+
+
+
+.list table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.list tr{
+    border: 1px solid #ddd;
+}
+
+.list th, .list td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    white-space: nowrap; 
+}
+
+table button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.accepted p {
+    background-color: rgb(9, 204, 9);
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+
+.pending p {
+    background-color: yellow;
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+
+.cancelled p {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.delete, .edit, button {
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.25s;
+}
+
+.delete:hover, .edit:hover {
+    background-color: black;
+    color: white;
+}
+
+#back{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .list {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list {
+        width: 70%;
+    }
+    
+    .list table {
+        min-width: 500px;
+    }
+}
